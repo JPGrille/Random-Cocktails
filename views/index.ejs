@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Random Cocktail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+    <h1>What's your next Cocktail?</h1>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>
+            <%= content %>
+          </p>
+        </div>
+        <div class="flip-card-back">
+          <img class="back-img" src="<%= content[0].strDrinkThumb %>" alt="cocktail-picture">
+          <p><%= content[0].strDrink %></p>
+          <button>Instructions</button>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
